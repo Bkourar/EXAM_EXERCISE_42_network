@@ -20,7 +20,7 @@ int main(int ac, char **av)
         i++;
     while (av[1][i] && av[1][i] != ' ' && av[1][i] != '\t')
         stack[j++] = av[1][i++];
-    stack[i] = '\0';
+    stack[j] = '\0';
     while (av[1][i] && av[1][i] == ' ' || av[1][i] == '\t')
         i++;
     if (!av[1][i])

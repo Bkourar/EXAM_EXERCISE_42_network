@@ -8,14 +8,14 @@ void	ft_putstr(char *str)
 
 int main(int ac, char **av)
 {
-    int i;
-    int j;
+    int     i;
+    int     j;
     char    stack[1024];
     
-    if (ac < 2)
-        return (write(1, "\n", 1), 1);
     i = 0;
     j = 0;
+    if (ac < 2)
+        return (write(1, "\n", 1), 1);
     while (av[1][i] && av[1][i] == ' ' || av[1][i] == '\t')
         i++;
     while (av[1][i] && av[1][i] != ' ' && av[1][i] != '\t')
